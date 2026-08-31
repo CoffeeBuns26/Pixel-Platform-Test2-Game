@@ -1,0 +1,64 @@
+[gd_scene load_steps=4 format=3 uid="uid://csimtiic2s4m7"]
+
+[ext_resource type="Script" uid="uid://vsi2j5maq6wx" path="res://Ladder.gd" id="1_1j01k"]
+[ext_resource type="Texture2D" uid="uid://dpts118hb2pgt" path="res://environment/ladder.png" id="2_t351p"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s0hyv"]
+size = Vector2(14.5, 200)
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_1j01k")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 92)
+shape = SubResource("RectangleShape2D_s0hyv")
+
+[node name="Ladder" type="Sprite2D" parent="."]
+texture = ExtResource("2_t351p")
+
+[node name="Ladder2" type="Sprite2D" parent="."]
+position = Vector2(0, 16)
+texture = ExtResource("2_t351p")
+
+[node name="Ladder3" type="Sprite2D" parent="."]
+position = Vector2(0, 32)
+texture = ExtResource("2_t351p")
+
+[node name="Ladder4" type="Sprite2D" parent="."]
+position = Vector2(0, 48)
+texture = ExtResource("2_t351p")
+
+[node name="Ladder5" type="Sprite2D" parent="."]
+position = Vector2(0, 64)
+texture = ExtResource("2_t351p")
+
+[node name="Ladder6" type="Sprite2D" parent="."]
+position = Vector2(0, 80)
+texture = ExtResource("2_t351p")
+
+[node name="Ladder7" type="Sprite2D" parent="."]
+position = Vector2(0, 96)
+texture = ExtResource("2_t351p")
+
+[node name="Ladder8" type="Sprite2D" parent="."]
+position = Vector2(0, 112)
+texture = ExtResource("2_t351p")
+
+[node name="Ladder9" type="Sprite2D" parent="."]
+position = Vector2(0, 128)
+texture = ExtResource("2_t351p")
+
+[node name="Ladder10" type="Sprite2D" parent="."]
+position = Vector2(0, 144)
+texture = ExtResource("2_t351p")
+
+[node name="Ladder11" type="Sprite2D" parent="."]
+position = Vector2(0, 160)
+texture = ExtResource("2_t351p")
+
+[node name="Ladder12" type="Sprite2D" parent="."]
+position = Vector2(0, 176)
+texture = ExtResource("2_t351p")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

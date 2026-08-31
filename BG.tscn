@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://bsp2n2vhvmt13"]
+
+[ext_resource type="Script" uid="uid://dub8v1pj3hdqi" path="res://BG.gd" id="1_1yvor"]
+[ext_resource type="Texture2D" uid="uid://dl0uphpxsh8vh" path="res://sky-with-clouds/Clouds/Clouds 1/1.png" id="1_a1ds0"]
+[ext_resource type="Texture2D" uid="uid://ff6sognbuata" path="res://sky-with-clouds/Clouds/Clouds 1/2.png" id="2_1yvor"]
+[ext_resource type="Texture2D" uid="uid://bfyrkw8rjim5p" path="res://sky-with-clouds/Clouds/Clouds 1/4.png" id="3_wfgfm"]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+script = ExtResource("1_1yvor")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2(1152, 0)
+
+[node name="Ozone" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(576, 324)
+scale = Vector2(2, 2)
+texture = ExtResource("1_a1ds0")
+
+[node name="Cloudbg" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(576, 324)
+scale = Vector2(2, 2)
+texture = ExtResource("2_1yvor")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(2, 1)
+motion_mirroring = Vector2(1152, 0)
+
+[node name="Cloudfg" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(576, 324)
+scale = Vector2(2, 2)
+texture = ExtResource("3_wfgfm")
